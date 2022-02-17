@@ -1,0 +1,9 @@
+<h1> Top 20 Movies According To Someone </h1>
+
+<ul>
+<% @movies.each do |movie| %>
+ <li><%=link_to movie.title, movie_path(movie) %> </li>
+<% end %>
+</ul>
+
+<%= link_to "See your lists", lists_path %>
